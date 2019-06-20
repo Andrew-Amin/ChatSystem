@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSettings">
+
+    <include
+        android:id="@+id/MainSettings_appBar"
+        layout="@layout/app_bar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/MainSettings_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainSettings_appBar"
+        android:padding="20sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/MainSettings_circleImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile_image" />
+
+        <TextView
+            android:id="@+id/MainSettings_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/MainSettings_circleImageView"
+            android:text="User name ..."
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/MainSettings_userStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MainSettings_userName"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/MainSettings_circleImageView"
+            android:hint="I'am available now ..."
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/MainSettings_basics"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="20dp"
+        android:background="?android:attr/listDivider" />
+
+    <RelativeLayout
+        android:id="@+id/MainSettings_R1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/MainSettings_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_medical_hitory" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_keyboard_arrow_right_24dp" />
+
+
+        <TextView
+            android:id="@+id/main1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/MainSettings_img1"
+            android:text="Medical history"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sub1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main1"
+
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/MainSettings_img1"
+            android:hint="Age , Weight , Physical habits ..."
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/MainSettings_R2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MainSettings_R1"
+        android:layout_marginTop="35dp">
+
+        <ImageView
+            android:id="@+id/MainSettings_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_account_24dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_keyboard_arrow_right_24dp" />
+
+
+        <TextView
+            android:id="@+id/main2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/MainSettings_img2"
+            android:text="Account"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sub2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main2"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/MainSettings_img2"
+            android:hint="Password , security , delete ..."
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/MainSettings_R3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MainSettings_R2"
+        android:layout_marginTop="35dp">
+
+        <ImageView
+            android:id="@+id/MainSettings_img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_palette_black_24dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_keyboard_arrow_right_24dp" />
+
+
+        <TextView
+            android:id="@+id/main3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/MainSettings_img3"
+            android:text="Personalize"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sub3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main3"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/MainSettings_img3"
+            android:hint="Wall paper , theme ..."
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/MainSettings_R3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="?android:attr/listDivider" />
+
+    <RelativeLayout
+        android:id="@+id/MainSettings_R4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider2"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/MainSettings_img4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_help_outline_24dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_keyboard_arrow_right_24dp" />
+
+
+        <TextView
+            android:id="@+id/main4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/MainSettings_img4"
+            android:text="Help !"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sub4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main4"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/MainSettings_img4"
+            android:hint="Contact Developers , View manual ..."
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

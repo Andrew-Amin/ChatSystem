@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".FindDoctorActivity">
+
+    <include
+        android:id="@+id/findDoctor_toolBar"
+        layout="@layout/app_bar_layout"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+    <EditText
+        android:id="@+id/et_findDoctor_search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/btn_findDoctor_search"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toStartOf="@+id/btn_findDoctor_search"
+        android:background="@drawable/et_search_bg"
+        android:enabled="false"
+        android:hint="search on doctor ..."
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/btn_findDoctor_search"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/btn2_bg"
+        android:src="@drawable/ic_search_black_24dp" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/findDoctor_toolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Speciality"
+                    android:padding="1dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/search_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp"
+                    android:theme="@style/switchTheme2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/find_doctor_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <ImageView
+        android:id="@+id/default_search_bg2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_search_bg" />
+
+    <TextView
+        android:id="@+id/text_search_bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/default_search_bg2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_search_bg"
+        android:text="tap the search icon ..."
+        android:textAlignment="center"
+        android:textColor="#DDD"
+        android:textSize="20dp" />
+
+</RelativeLayout>

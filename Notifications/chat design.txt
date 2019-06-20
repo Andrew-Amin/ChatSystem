@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/customMsg_receiverImage"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/profile_image"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="2dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/receiver_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/customMsg_receiverImage"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/receiver_msg"
+        android:minWidth="60dp"
+        android:layout_marginEnd="80dp"
+        android:visibility="gone"
+        android:layout_marginBottom="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_receiver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/customMsg_receiverText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receiver message goes here ..."
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/customMsg_receiverTextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEP 15"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:layout_below="@+id/customMsg_receiverText"
+                android:layout_toEndOf="@+id/customMsg_receiverText"
+                android:layout_marginEnd="5dp"
+                android:paddingBottom="8dp"
+
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/sender_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sender_msg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentTop="@+id/receiver_linearLayout"
+        android:layout_marginTop="10dp"
+        android:minWidth="60dp"
+        android:layout_marginStart="80dp"
+        >
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_sender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/customMsg_senderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sender message goes here ..."
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/customMsg_senderTextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEP 15"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:layout_below="@+id/customMsg_senderText"
+                android:layout_toEndOf="@+id/customMsg_senderText"
+                android:layout_marginEnd="8dp"
+                android:paddingBottom="5dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

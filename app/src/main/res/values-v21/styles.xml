@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="switchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="switchTheme2" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#999</item>
+
+    </style>
+</resources>

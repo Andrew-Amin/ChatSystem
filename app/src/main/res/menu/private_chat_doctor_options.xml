@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/privateChat_menu_rateDoctor"
+        android:title="Rate the Doctor"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/privateChat_menu_RecommendDoctor"
+        android:title="Recommend your Doctor"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/privateChat_menu_visitProfile"
+        android:title="Visit profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/privateChat_menu_chatGallery"
+        android:title="Shared pictures"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/privateChat_menu_files"
+        android:title="Shared files"
+        app:showAsAction="never" />
+
+</menu>
